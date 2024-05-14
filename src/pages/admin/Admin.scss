@@ -1,0 +1,315 @@
+$primaryCl:#000000;
+$primaryTitleCl:#FAFAFA;
+$primaryBorderCl:#dad1d1e1;
+$secondaryCl: #ffffff;
+$buttonLinkCl:#00FF66;
+$backroundTextCl:#DB4444;
+
+.admin{
+    padding-top: 90px;
+    padding-bottom: 140px;
+    &__wrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    &__top__link{
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $primaryBorderCl;
+    }
+    &__top__link:nth-child(2){
+        color: $primaryCl;
+    }
+    &__top__text{
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $primaryCl;
+    }
+    &__top__text span{
+        color: $backroundTextCl;
+    }
+    &__left-boxes__card{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__left-boxes__title{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        color: $primaryCl;
+        margin-bottom: 8px;
+    }
+    &__left-boxes__link{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $primaryBorderCl;
+        transition:all 0.5s ease ;
+        &:hover{
+            color: $backroundTextCl;
+        }
+    }
+    &__left-boxes{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__left-boxes__btn{
+        padding: 8px 20px;
+        color: $secondaryCl;
+        background-color: $backroundTextCl;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+        &:hover{
+            border: 1px solid $backroundTextCl;
+            background-color: transparent;
+            color: $backroundTextCl;
+        }
+    }
+    &__right-boxes{
+        box-shadow: 2px 2px 10px rgb(182, 181, 181);
+        padding: 40px 80px;
+        width: 75%;
+        border-radius: 4px;
+    }
+    &__right-boxes__card{
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        color: $backroundTextCl;
+        margin-bottom: 16px;
+    }
+    &__right-boxes__cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:24px 50px;
+        margin-bottom: 24px;
+    }
+    &__lable{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $primaryCl;
+        margin-bottom: 8px;
+    }
+    &__right-boxes__password-cards{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    &__input{
+        border: none;
+        outline: none;
+        background-color: $primaryTitleCl;
+        border-radius: 4px;
+        padding: 13px 20px 13px 16px;
+    }
+    &__right-boxes__psswor-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+    &__right-boxes__btns{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+    }
+    &__right-boxes__btn{
+        padding: 10px 30px;
+        color: $secondaryCl;
+        background-color: $backroundTextCl;
+        border-radius: 4px;
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
+        &:hover{
+            border: 1px solid $backroundTextCl;
+            background-color: transparent;
+            color: $backroundTextCl;
+        }
+    }
+    &__right-boxes__btn-cancel{
+        padding: 10px 30px;
+        color: $primaryCl;
+        background-color: transparent;
+        border-radius: 4px;
+        transition: all 0.5s ease;
+        border: 1px solid $backroundTextCl;
+        &:hover{
+            background-color: $backroundTextCl;
+            color: $secondaryCl;
+        }
+    }
+}
+@media (max-width: 1100px){
+    .admin{
+        &__right-boxes__cards{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}
+@media (max-width: 1030px){
+    .admin{
+        &__right-boxes{
+            width: 100%;
+        }
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+        &__left-boxes{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+}
+@media (max-width: 700px){
+    .admin{
+        &__right-boxes{
+            padding: 20px 40px;
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .admin{
+
+        &__right-boxes__btn{
+            padding: 6px 20px;
+            font-size: 12px;
+        }
+        &__right-boxes__btn-cancel{
+            padding: 6px 20px;
+            font-size: 12px;
+        }
+        &__lable{
+            font-size: 14px;
+        }
+        &__input{
+            font-size: 12px;
+        }
+        &__title{
+            font-size: 16px;
+        }
+    }
+}
+@media (max-width: 450px){
+    .admin{
+        &__top{
+            margin-bottom: 50px;
+        }
+        &__top__link{
+            font-size: 12px;
+        }
+        &__top__text{
+
+        }
+        &__right-boxes{
+            padding: 10px 20px;
+        }
+        &__right-boxes__btn{
+            padding: 6px 16px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+        &__right-boxes__btn-cancel{
+            padding: 6px 16px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+        &__lable{
+            font-size: 12px;
+        }
+        &__input{
+            font-size: 10px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__left-boxes__title{
+            font-size: 12px;
+        }
+        &__left-boxes__link{
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .admin{
+        &__top{
+            margin-bottom: 50px;
+            align-items: center;
+        }
+        &__top__link{
+            font-size: 10px;
+        }
+        &__top__text{
+            font-size: 10px;
+            line-height: 10px;
+        }
+        &__right-boxes{
+            padding: 10px 20px;
+        }
+        &__right-boxes__btn{
+            padding: 6px 16px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+        &__right-boxes__btn-cancel{
+            padding: 6px 16px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+        &__lable{
+            font-size: 12px;
+        }
+        &__input{
+            font-size: 10px;
+        }
+        &__title{
+            font-size: 14px;
+        }
+        &__left-boxes__title{
+            font-size: 12px;
+        }
+        &__left-boxes__link{
+            font-size: 14px;
+        }
+        &__right-boxes__btns{
+            flex-direction: column;
+        }
+        &__right-boxes__btns button{
+            width: 100%;
+        }
+    }
+}

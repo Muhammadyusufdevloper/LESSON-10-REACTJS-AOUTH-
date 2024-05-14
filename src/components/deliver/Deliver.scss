@@ -1,0 +1,33 @@
+.featured{
+    margin:47px 0 140px;
+    &__service__cards{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    &__service__card{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img{
+            margin-bottom: 24px;
+        }
+    }
+    &__service__title{
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        color: black;
+        margin-bottom: 8px;
+    }
+    &__service__text{
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: black;
+    }
+}

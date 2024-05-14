@@ -1,0 +1,97 @@
+.single{
+    margin: 68px 0;
+    &__wrapper,
+    &__cards{
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+    &__title{
+        font-family: Inter;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 38.73px;
+        letter-spacing: 0.05em;
+        color: black;   
+        margin-bottom: 66px;   
+    }
+    &__loading__img-part{
+        width: 38%;
+    }
+    &__loading__img-part,
+    &__img-part{
+        height: 450px;
+        background-color: #EDF2F4;
+        padding: 30px 20px;
+        border-radius: 20px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+    &__loading__info-part-div:nth-child(1),
+    &__info-part__title{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.05px;
+        letter-spacing: 0.05em;
+        color: black;
+        margin-bottom: 30px;
+    }
+    &__info-part__desc{
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 19.36px;
+        color: black;
+        margin-top: 10px;
+    }
+    &__loading__info-part{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 58%;
+    }
+    &__loading__info-part-div{
+        border-radius: 5px;
+    }
+    &__loading__info-part-div:nth-child(1){
+        width: 70%;
+        height: 30px;
+    
+    }
+    &__loading__info-part-div:nth-child(2){
+        width: 25%;
+        height: 20px;
+    }
+    &__loading__info-part-div:nth-child(3){
+        margin: 5px 0;
+        width: 100%;
+        height: 30px;
+    }
+    &__loading__info-part-div:nth-child(4){
+        width: 30%;
+        height: 20px;
+    }
+}
+
+@media (max-width:800px){
+    .single{
+        &__cards{
+            flex-direction: column;
+        }
+        &__img-part{
+            height: 380px;
+            background-color: #EDF2F4;
+            padding: 10px 5px;
+            border-radius: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+            }
+        }
+    }
+}

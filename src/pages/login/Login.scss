@@ -1,0 +1,121 @@
+.login{
+    padding-top: 150px;
+    padding-bottom: 110px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    &__boxs {
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+    &__card{
+        min-width: 371px;
+    }
+    &__title{
+        font-family: Inter;
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #000;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 48px;
+    }
+    &__form{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    &__input{
+        border: none;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #dad1d1e1;
+        padding: 0 118px 8px 0;
+        outline: none;
+    }
+
+    &__btn{
+        background-color: #DB4444;
+        padding: 16px 48px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #FAFAFA;
+        transition: all 0.5s ease;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #DB4444;
+            color: #DB4444;
+        }
+    }
+}
+@media (max-width: 1080px){
+    .login{
+        &__boxs{
+            display: none;
+        }
+        &__wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .login{
+        &__title{
+            font-size: 28px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+        &__card{
+            max-width: 371px;
+        }
+    }
+}
+@media (max-width: 470px){
+    .login{
+        &__form{
+            width: 200px;
+        }
+        &__title{
+            font-size: 20px;
+        }
+        &__text{
+            font-size: 12px;
+        }
+        &__wrapper{
+            width: 200px;
+        }
+        &__input{
+            padding: 0 60px 5px 0;
+            width: 100%;
+        }
+
+        &__btn{
+            padding: 10px 20px;
+            font-size: 12px;
+        }
+    }
+}
